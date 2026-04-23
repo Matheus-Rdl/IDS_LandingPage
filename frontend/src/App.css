@@ -209,6 +209,11 @@ p,
 a,
 li {
   font-family: var(--font-text);
+  text-decoration: none;
+}
+
+a {
+  color: #222;
 }
 
 ul,
@@ -219,6 +224,7 @@ ol {
 }
 
 .btn-cta {
+  text-decoration: none;
   background-color: var(--color-orange-dark);
   border: 0 solid;
   border-radius: .7rem;
@@ -327,7 +333,7 @@ ol {
   top: 0;
   right: 0;
   margin-right: 1.5rem;
-  margin-top: 4.5rem;
+  margin-top: 5.5rem;
 }
 
 .header .header-nav nav {
@@ -492,6 +498,10 @@ ol {
   margin: 0;
 }
 
+.header .header-content .header-btn {
+  margin-top: 2rem;
+}
+
 .header .header-content .header-lotes {
   width: 50%;
   display: flex;
@@ -542,7 +552,7 @@ ol {
 }
 
 .header .header-content .header-lotes .time-card {
-  padding: 1rem .5rem 0 .5rem;
+  padding: 1rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -738,6 +748,7 @@ ol {
   height: 15rem;
   background-color: #C7352A;
   position: relative;
+  border-radius: 1rem;
 }
 
 .teachers-box p {
@@ -1164,6 +1175,10 @@ footer h1 {
   .header .header-text {
     text-align: center;
     font-size: small;
+  }
+
+  .header .header-content .header-lotes .time-card {
+    padding-inline: .5rem;
   }
 
   .money .money-content .money-content-box-party {}

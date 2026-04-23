@@ -84,7 +84,7 @@ function App() {
       {/* HERO */}
       <header className='header' id='inicio'>
         <div className='header-menu'>
-          <GiHamburgerMenu onClick={handleMenu}/>
+          <GiHamburgerMenu onClick={handleMenu} />
         </div>
 
         <div className={showNav ? "header-side-nav header-side-nav-active" : "header-side-nav header-side-nav-close"}>
@@ -98,23 +98,27 @@ function App() {
             <a onClick={handleMenu} >Fale conosco</a>
           </div>
           <img src='images/logo-ids.png' className='logo-menu' />
-          <IoClose className='header-close-menu' onClick={() => setShowNav(!showNav)}/>
+          <IoClose className='header-close-menu' onClick={() => setShowNav(!showNav)} />
           <img src='images/Menu-bg-img.png' className='header-side-nav-bg' />
         </div>
-        
+
         <div className='header-imgs'>
           <img src='images/logo-ids.png' className='logo' />
           <div className='header-nav'>
             <nav>
-              <p>O evento</p>
-              <p>Professores</p>
-              <p>Programação</p>
-              <p>Local</p>
-              <p>Ingressos</p>
+              <a href="#geral">O evento</a>
+              <a href="#professores">Professores</a>
+              <a href="#programacao">Programação</a>
+              <a href="#localizacao">Local</a>
+              <a href="#ingressos">Ingressos</a>
             </nav>
 
             <div className='header-nav-btn'>
-              <button className='btn-cta'>Garantir minha vaga</button>
+              <a
+                href="https://forms.gle/T6y8x2BB9shcNwzN9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-cta">Garantir minha vaga</a>
             </div>
           </div>
           {/*
@@ -148,7 +152,11 @@ function App() {
               </div>
 
               <div className='header-btn'>
-                <button className='btn-cta'>Garantir minha vaga</button>
+                <a
+                  href="https://forms.gle/T6y8x2BB9shcNwzN9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-cta">Garantir minha vaga</a>
               </div>
             </div>
           </div>
@@ -251,7 +259,11 @@ function App() {
           </div>
         </div>
         <div className='teacher-btn'>
-          <button className='btn-cta'>Garantir minha vaga</button>
+          <a
+            href="https://forms.gle/T6y8x2BB9shcNwzN9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-cta">Garantir minha vaga</a>
         </div>
       </section >
 
@@ -319,7 +331,11 @@ function App() {
           </div>
         </div>
         <div className='agenda-btn'>
-          <button className='btn-cta'>Garantir minha vaga</button>
+          <a
+            href="https://forms.gle/T6y8x2BB9shcNwzN9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-cta">Garantir minha vaga</a>
         </div>
       </section >
 
@@ -447,7 +463,11 @@ function App() {
         </div>
 
         <div className='money-btn'>
-          <button className='btn-cta'>Garantir minha vaga</button>
+          <a
+            href="https://forms.gle/T6y8x2BB9shcNwzN9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-cta">Garantir minha vaga</a>
         </div>
       </section>
 
