@@ -751,7 +751,7 @@ ol {
   margin-bottom: 0;
 }
 
-.teachers p{
+.teachers p {
   margin-top: 0;
   text-align: center;
 }
@@ -771,6 +771,7 @@ ol {
 
 .teachers-box div,
 .teachers-box-grid div {
+  cursor: pointer;
   width: 12rem;
   height: 15rem;
   border: .2rem solid #C7352A;
@@ -778,7 +779,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .teachers-box div img,
@@ -787,7 +788,7 @@ ol {
   border-radius: 1rem;
 }
 
-.teachers-box .interrogation img{
+.teachers-box .interrogation img {
   width: 7.5rem;
   border-radius: 1rem;
 }
@@ -832,7 +833,7 @@ ol {
 }
 
 .agenda .agenda-content .agenda-content-box {
-  padding: 1rem 4rem 5rem 1rem;
+  padding: 1rem 4rem 10rem 1rem;
   border: 1.5px solid black;
   border-radius: 1rem;
   width: 30%;
@@ -858,11 +859,51 @@ ol {
   color: var(--color-blue);
 }
 
+.agenda .agenda-content-beans {
+  border: 1.5px solid black;
+  border-radius: 1rem;
+  width: 85%;
+  height: 150px;
+  margin-inline: 7.5%;
+  margin-top: -2.5rem;
+  background-color: white;
+  position: relative;
+}
+
+.agenda .agenda-content-beans img:nth-child(1) {
+  height: 150px;
+  position: absolute;
+  left: 0;
+  border-radius: 1rem;
+
+  mask-image: linear-gradient(to right,
+      black 0%,
+      black 15%,
+      rgba(0, 0, 0, 0.8) 65%,
+      rgba(0, 0, 0, 0.4) 80%,
+      transparent 100%);
+}
+
+.agenda .agenda-content-beans img:nth-child(2) {
+  height: 150px;
+  position: absolute;
+  right: 0;
+  border-radius: 1rem;
+
+  mask-image: linear-gradient(to left,
+      black 0%,
+      black 15%,
+      rgba(0, 0, 0, 0.8) 65%,
+      rgba(0, 0, 0, 0.4) 80%,
+      transparent 100%);
+}
+
 .agenda-btn {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: -2rem;
+  margin-top: -1.75rem;
+  z-index: 1;
 }
 
 .local {
@@ -1253,14 +1294,6 @@ footer h1 {
     font-size: x-large;
   }
 
-  .teachers-box div,
-  .teachers-box-grid div {
-    width: 8.5rem;
-    height: 10rem;
-    background-color: #C7352A;
-    position: relative;
-  }
-
   .agenda .agenda-content {
     gap: 1rem;
   }
@@ -1271,7 +1304,6 @@ footer h1 {
 
   .agenda .agenda-content .agenda-content-box {
     padding-right: 1rem;
-    padding-bottom: 5rem;
   }
 
   .money .money-content .money-content-box-pix,
@@ -1327,9 +1359,22 @@ footer h1 {
 
 @media (max-width: 750px) {
 
+
+  .teachers-box div img,
+  .teachers-box-grid div {
+    width: 8.5rem;
+  }
+
+  .teachers-box div,
+  .teachers-box-grid div {
+    width: 8.5rem;
+    height: 10.5rem;
+  }
+
   .extra .extra-content .extra-content-box .extra-content-box-text {
     width: 8rem;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -1508,6 +1553,45 @@ footer h1 {
     border: 1.5px solid black;
     border-radius: 1rem;
     width: 75%;
+    padding-bottom: 5rem;
+  }
+
+
+  .agenda .agenda-content-beans {
+    height: 300px;
+    margin-top: 0;
+  }
+
+  .agenda .agenda-content-beans img:nth-child(1) {
+    border-bottom-left-radius: 0;
+    position: relative;
+
+  -webkit-mask-composite: destination-in;
+
+
+  mask-image: linear-gradient(to right,
+      black 0px,
+      black 5%,
+      rgba(0, 0, 0, 0.8) 75%,
+      rgba(0, 0, 0, 0.4) 90%,
+      transparent 100%), linear-gradient(to bottom,
+      black 0%,
+      black 5%,
+      rgba(0, 0, 0, 0.8) 75%,
+      rgba(0, 0, 0, 0.4) 90%,
+      transparent 100%);
+  }
+
+  .agenda .agenda-content-beans img:nth-child(2) {
+    bottom: 0;
+    border-top-right-radius: 0;
+
+    mask-image: linear-gradient(to left,
+        black 0%,
+        black 15%,
+        rgba(0, 0, 0, 0.8) 65%,
+        rgba(0, 0, 0, 0.4) 80%,
+        transparent 100%);
   }
 
   .agenda-btn {
@@ -1584,6 +1668,19 @@ footer h1 {
 }
 
 @media (max-width: 500px) {
+
+  .teachers-box div,
+  .teachers-box-grid div {
+    width: 9.5rem;
+    height: 12rem;
+
+  }
+
+  .teachers-box div img,
+  .teachers-box-grid div {
+    width: 9.5rem;
+  }
+
   .teachers-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

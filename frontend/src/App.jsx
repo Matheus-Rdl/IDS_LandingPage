@@ -238,7 +238,7 @@ function App() {
           <h2>&#128073;Estudo + Experiência + Celebração</h2>
         </div>
         <div className='event-img'>
-          <img src='/images/Header-BG.png' />
+          <img src='/images/festival-anterior.jpg' />
         </div>
       </section >
 
@@ -248,12 +248,25 @@ function App() {
         <p>Clicle nos profissionais para conhecer mais sobre eles!</p>
         <div className='teachers-content'>
           <div className='teachers-box'>
-            <div>
-              <img src='/images/teachers/01_gui_amandinha.png'></img>
-            </div>
-            <div>
-              <img src='/images/teachers/02_thata_robson.png'></img>
-            </div>
+            <a
+              href="https://www.instagram.com/guiih_amandinha/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img src='/images/teachers/01_gui_amandinha.png'></img>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/thataerobson/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img src='/images/teachers/02_thata_robson.png'></img>
+              </div>
+            </a>
             <div className='interrogation'>
               <img src='/images/teachers/teacher_interrogation.png'></img>
             </div>
@@ -350,6 +363,12 @@ function App() {
             </div>
           </div>
         </div>
+
+        <div className='agenda-content-beans'>
+          <img src='/images/feijoada-left.jfif'/>
+          <img src='/images/feijoada-right.png'/>
+        </div>
+
         <div className='agenda-btn'>
           <a
             href="https://forms.gle/T6y8x2BB9shcNwzN9"
