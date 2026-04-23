@@ -97,13 +97,13 @@ function App() {
             <a onClick={handleMenu} href="#ingressos">Ingressos</a>
             <a onClick={handleMenu} >Fale conosco</a>
           </div>
-          <img src='images/logo-ids.png' className='logo-menu' />
+          <img src='/images/logo-ids.png' className='logo-menu' />
           <IoClose className='header-close-menu' onClick={() => setShowNav(!showNav)} />
-          <img src='images/Menu-bg-img.png' className='header-side-nav-bg' />
+          <img src='/images/Menu-bg-img.png' className='header-side-nav-bg' />
         </div>
 
         <div className='header-imgs'>
-          <img src='images/logo-ids.png' className='logo' />
+          <img src='/images/logo-ids.png' className='logo' />
           <div className='header-nav'>
             <nav>
               <a href="#geral">O evento</a>
@@ -128,15 +128,15 @@ function App() {
           </div>
           */}
 
-          <img src='images/Header-BG.png' className='header-bg' />
-          <img src='images/Header-BG-Mobile.png' className='header-bg-mobile' />
+          <img src='/images/Header-BG.png' className='header-bg' />
+          <img src='/images/Header-BG-Mobile.png' className='header-bg-mobile' />
         </div>
 
         <div className='header-content'>
           <div className='header-text'>
             <div>
               <h2>Não é só dançar.<br></br><span>É pertencer</span></h2>
-              <img src='images/festival-logo.png' />
+              <img src='/images/festival-logo.png' />
               <p className='header-text-box'>3 dias de imersão pra sentir, trocar e viver o samba de dentro - com aulas, bailes, música ao vivo e conexão real.</p>
 
               {/* Icones do header */}
@@ -162,7 +162,7 @@ function App() {
           </div>
 
           <div className='header-lotes'>
-            <img src='images/lotes/1-lote.png' />
+            <img src='/images/lotes/1-lote.png' />
             <section className="countdown-wrapper">
               <div className="countdown-box">
                 <h2>O evento começa em:</h2>
@@ -235,7 +235,7 @@ function App() {
           <h2>&#128073;Estudo + Experiência + Celebração</h2>
         </div>
         <div className='event-img'>
-          <img src='images/Header-BG.png' />
+          <img src='/images/Header-BG.png' />
         </div>
       </section >
 
@@ -342,7 +342,7 @@ function App() {
       {/* LOCAL */}
       <section className='local' id='localizacao'>
         <div className='local-img'>
-          <img src='images/MieKaikan.png' />
+          <img src='/images/MieKaikan.png' />
         </div>
         <div className='local-content'>
           <h1>Você vai viver isso tudo em um<br></br>
@@ -509,8 +509,8 @@ function App() {
       {/* FOOTER */}
       <footer>
         <div className='footer-waves'>
-          <img src="images/Footer-wave-right.png" className='footer-wave-1' />
-          <img src="images/Footer-wave-left.png" className='footer-wave-2' />
+          <img src="/images/Footer-wave-right.png" className='footer-wave-1' />
+          <img src="/images/Footer-wave-left.png" className='footer-wave-2' />
         </div>
         <div className='footer'>
           <h1>Irmãos de Samba - Viva de dentro<br></br>

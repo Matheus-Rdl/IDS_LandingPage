@@ -1141,7 +1141,7 @@ footer h1 {
 
 .footer {
   height: 150px;
-  background-image: url('images/Footer-img.png');
+  background-image: url('/images/Footer-img.png');
   background-repeat: repeat-x;
   background-size: 300px;
   background-position: bottom;
