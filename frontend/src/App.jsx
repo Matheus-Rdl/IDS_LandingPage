@@ -1,26 +1,107 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import { FaRegCalendarAlt, FaRegHeart } from "react-icons/fa";
+import { FaRegCalendarAlt, FaRegHeart, FaMale, FaFemale } from "react-icons/fa";
 import { FaLocationDot, FaUsers } from "react-icons/fa6";
 import { MdEmojiPeople, MdAccessibility } from "react-icons/md";
 import { GiRunningShoe } from "react-icons/gi";
 import { AiOutlineGlobal } from "react-icons/ai";
-import { IoIosMusicalNotes } from "react-icons/io";
+import { IoIosMusicalNotes, IoLogoWhatsapp } from "react-icons/io";
 import { PiWheelchairFill } from "react-icons/pi";
-import { FaMale, FaFemale } from "react-icons/fa";
-import { IoWaterOutline } from "react-icons/io5";
+import { IoWaterOutline, IoBedOutline, IoRestaurantSharp, IoBedSharp, IoClose } from "react-icons/io5";
 import { RiSofaLine } from "react-icons/ri";
 import { LiaCocktailSolid } from "react-icons/lia";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 function App() {
+
+  const [showNav, setShowNav] = useState(false);
+
+  const [timeLeft, setTimeLeft] = useState({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
+
+  useEffect(() => {
+    function getNextJuly24() {
+      const now = new Date();
+      let year = now.getFullYear();
+
+      let target = new Date(year, 6, 24, 23, 59, 59);
+
+      if (now > target) {
+        target = new Date(year + 1, 6, 24, 23, 59, 59);
+      }
+
+      return target.getTime();
+    }
+
+    const eventDate = getNextJuly24();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance <= 0) {
+        setTimeLeft({
+          days: "00",
+          hours: "00",
+          minutes: "00",
+          seconds: "00",
+        });
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+
+      setTimeLeft({
+        days: String(days).padStart(2, "0"),
+        hours: String(hours).padStart(2, "0"),
+        minutes: String(minutes).padStart(2, "0"),
+        seconds: String(seconds).padStart(2, "0"),
+      });
+    }
+
+    updateCountdown();
+    const interval = setInterval(updateCountdown, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleMenu = () => {
+    setShowNav(!showNav)
+  };
 
   return (
     <>
       {/* HERO */}
-      <div className='header'>
+      <header className='header' id='inicio'>
+        <div className='header-menu'>
+          <GiHamburgerMenu onClick={handleMenu}/>
+        </div>
+
+        <div className={showNav ? "header-side-nav header-side-nav-active" : "header-side-nav header-side-nav-close"}>
+          <div className='header-nav-list'>
+            <a onClick={handleMenu} href="#inicio">Inicio</a>
+            <a onClick={handleMenu} href="#geral">Geral</a>
+            <a onClick={handleMenu} href="#professores">Professores</a>
+            <a onClick={handleMenu} href="#programacao">Programação</a>
+            <a onClick={handleMenu} href="#localizacao">Localização</a>
+            <a onClick={handleMenu} href="#ingressos">Ingressos</a>
+            <a onClick={handleMenu} >Fale conosco</a>
+          </div>
+          <img src='images/logo-ids.png' className='logo-menu' />
+          <IoClose className='header-close-menu' onClick={() => setShowNav(!showNav)}/>
+          <img src='images/Menu-bg-img.png' className='header-side-nav-bg' />
+        </div>
+        
         <div className='header-imgs'>
           <img src='images/logo-ids.png' className='logo' />
           <div className='header-nav'>
@@ -30,10 +111,11 @@ function App() {
               <p>Programação</p>
               <p>Local</p>
               <p>Ingressos</p>
-              <div className='header-nav-btn'>
-                <button className='btn-cta'>Garantir minha vaga</button>
-              </div>
             </nav>
+
+            <div className='header-nav-btn'>
+              <button className='btn-cta'>Garantir minha vaga</button>
+            </div>
           </div>
           {/*
           <div className='header-text'>
@@ -73,30 +155,49 @@ function App() {
 
           <div className='header-lotes'>
             <img src='images/lotes/1-lote.png' />
+            <section className="countdown-wrapper">
+              <div className="countdown-box">
+                <h2>O evento começa em:</h2>
+
+                <div className="countdown-timer">
+                  <div className="time-card">
+                    <span>{timeLeft.days}</span>
+                    <p>Dias</p>
+                  </div>
+
+                  <div className="divider"></div>
+
+                  <div className="time-card">
+                    <span>{timeLeft.hours}</span>
+                    <p>Hrs</p>
+                  </div>
+
+                  <div className="divider"></div>
+
+                  <div className="time-card">
+                    <span>{timeLeft.minutes}</span>
+                    <p>Min</p>
+                  </div>
+
+                  <div className="divider"></div>
+
+                  <div className="time-card">
+                    <span>{timeLeft.seconds}</span>
+                    <p>Seg</p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-      </div>
-
-      {/* INTRODUÇÃO */}
-      <div className='introducing'>
-
-
-        {/*
-        <div className='introducing-box'>
-          <div><p>8+ horas de aulas</p></div>
-          <div><p>3 Bailes para viver na prática</p></div>
-          <div><p>Bandas ao vivo</p></div>
-          <div><p>Conexão & experiencias que transformam</p></div>
-        </div>
-        */}
-      </div>
+      </header>
 
       {/* PRINCIPAL */}
-      <div className='event'>
+      <section className='event' id='geral'>
         <div className='event-content'>
           <h1>&#x1F525;O que você vai viver nesses <span>3 dias</span></h1>
           <div className='event-content-icons'>
-            <div>
+            <div className='event-content-icons-exception'>
               <MdEmojiPeople />
               <MdAccessibility />
               <MdEmojiPeople />
@@ -128,10 +229,10 @@ function App() {
         <div className='event-img'>
           <img src='images/Header-BG.png' />
         </div>
-      </div >
+      </section >
 
       {/* PROFESSORES */}
-      <div className='teachers'>
+      <section className='teachers' id='professores'>
         <h1>Quem constroi essa experiência com você:</h1>
         <div className='teachers-content'>
           <div className='teachers-box'>
@@ -141,6 +242,10 @@ function App() {
             <div></div>
             <div></div>
             <div></div>
+            <div className='teachers-box-exception'></div>
+            <div className='teachers-box-exception'></div>
+          </div>
+          <div className='teachers-box-grid'>
             <div></div>
             <div></div>
           </div>
@@ -148,10 +253,10 @@ function App() {
         <div className='teacher-btn'>
           <button className='btn-cta'>Garantir minha vaga</button>
         </div>
-      </div >
+      </section >
 
       {/* PROGRAMAÇÃO */}
-      <div className='agenda'>
+      <section className='agenda' id='programacao'>
         <h1>Como será o evento - <span>programação</span></h1>
         <div className='agenda-content'>
           <div className='agenda-content-box'>
@@ -163,8 +268,10 @@ function App() {
                   Gafieira da ladeira <br></br>
                   20h às 1h</p>
 
-                <p> DJ Belo <br></br>
-                  Interação especial</p>
+                <ul>
+                  <li>Dj Belo</li>
+                  <li>Interação especial</li>
+                </ul>
               </div>
 
             </div>
@@ -189,9 +296,11 @@ function App() {
                 <p>18h30 às 22h30 <br></br>
                   Baile</p>
 
-                <p>Banda Universo Gafieira <br></br>
-                  DJs Erivaldo e Belo <br></br>
-                  Show da cia</p>
+                <ul>
+                  <li>Banda Universo Gafieira</li>
+                  <li>DJs Erivaldo e Belo</li>
+                  <li>Show da cia</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -212,10 +321,10 @@ function App() {
         <div className='agenda-btn'>
           <button className='btn-cta'>Garantir minha vaga</button>
         </div>
-      </div >
+      </section >
 
       {/* LOCAL */}
-      <div className='local'>
+      <section className='local' id='localizacao'>
         <div className='local-img'>
           <img src='images/MieKaikan.png' />
         </div>
@@ -241,6 +350,18 @@ function App() {
               <p>Água disponivel</p>
             </div>
 
+            <div className='local-content-icons-grid-exception'>
+              <RiSofaLine />
+              <p>Conforto pra passar o dia</p>
+            </div>
+
+            <div className='local-content-icons-grid-exception'>
+              <LiaCocktailSolid />
+              <p>Bar nos bailes</p>
+            </div>
+          </div>
+
+          <div className='local-content-icons-grid'>
             <div>
               <RiSofaLine />
               <p>Conforto pra passar o dia</p>
@@ -252,10 +373,10 @@ function App() {
             </div>
           </div>
         </div>
-      </div >
+      </section >
 
       {/* PAGAMENTO */}
-      <div className='money'>
+      <section className='money' id='ingressos'>
         <div className='money-content'>
           <div className='money-content-box-bill'>
             <h1>Garanta a sua vaga!</h1>
@@ -305,20 +426,77 @@ function App() {
 
             <h1>PIX: ingressoids@gmail.com</h1>
             <h2>Enviar comprovante para <br></br>
-              Amanda (11 96685-9777)</h2>
+              Amanda (11) 96685-9777</h2>
 
             <h2><span>vem de fora de SP?</span><br></br>
               Temos condições especiais<br></br>
               Entre em contato</h2>
-
           </div>
+
         </div>
+
+        <div className='money-content-box-pix-tablet'>
+          <h1>PIX: ingressoids@gmail.com</h1>
+          <h2>Enviar comprovante para <br></br>
+            Amanda (11) 96685-9777</h2>
+
+          <h2><span>vem de fora de SP?</span><br></br>
+            Temos condições especiais<br></br>
+            Entre em contato</h2>
+
+        </div>
+
         <div className='money-btn'>
           <button className='btn-cta'>Garantir minha vaga</button>
         </div>
-      </div>
+      </section>
 
+      {/* EXTRAS */}
+      <section className='extra'>
+        <h1>Informações extras</h1>
+        <div className='extra-content'>
+          <div className='extra-content-box'>
+            <IoBedSharp />
+            <div className='extra-content-box-text'>
+              <h2>Hospedagem</h2>
+              <p>Temos indicações de hotéis e hostels próximos ao local.</p>
+            </div>
+          </div>
+          <div className='extra-content-box'>
+            <IoRestaurantSharp />
+            <div className='extra-content-box-text'>
+              <h2>Restaurante próximos</h2>
+              <p>Opções variadas a poucos minutos do Mie Kaikan.</p>
+            </div>
+          </div>
+          <div className='extra-content-box'>
+            <FaLocationDot />
+            <div className='extra-content-box-text'>
+              <h2>Como chegar</h2>
+              <p>Fácil acesso de metrô, ônibus e carro.</p>
+            </div>
+          </div>
+          <div className='extra-content-box'>
+            <IoLogoWhatsapp />
+            <div className='extra-content-box-text'>
+              <h2>Dúvidas</h2>
+              <p>Fale com a gente pelo<br></br>(11) 96685-9777.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* FOOTER */}
+      <footer>
+        <div className='footer-waves'>
+          <img src="images/Footer-wave-right.png" className='footer-wave-1' />
+          <img src="images/Footer-wave-left.png" className='footer-wave-2' />
+        </div>
+        <div className='footer'>
+          <h1>Irmãos de Samba - Viva de dentro<br></br>
+            24 a 25 de Julho | São Paulo</h1>
+        </div>
+      </footer>
 
       <div>
         {/*
