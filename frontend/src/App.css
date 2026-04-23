@@ -746,7 +746,7 @@ ol {
 .teachers-box-grid div {
   width: 12rem;
   height: 15rem;
-  background-color: #C7352A;
+  background-color: var(--color-red);
   position: relative;
   border-radius: 1rem;
 }
