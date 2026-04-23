@@ -193,6 +193,7 @@
   --color-red: #C7352A;
   --color-blue: #2FA7B0;
   --color-orange: #E79A4B;
+  --color-green: #4CAF50;
   --color-orange-dark: #ff5416;
 
   --font-text: "Montserrat", sans-serif;
@@ -396,7 +397,7 @@ ol {
   width: 100%;
   top: 0;
   z-index: -10;
-  opacity: .5;
+  opacity: .3;
 
   mask-image: linear-gradient(to bottom,
       black 0px,
@@ -445,6 +446,7 @@ ol {
   display: flex;
   text-align: start;
   justify-content: center;
+  font-size: smaller;
 }
 
 .header .header-content .header-text h2 {
@@ -453,10 +455,21 @@ ol {
   text-transform: uppercase;
   font-family: var(--font-text2);
   font-weight: 700;
-  font-size: xx-large;
+  font-size: 1.75rem;
   border-radius: 2rem;
   margin-top: -3rem;
   margin-left: 7.5rem;
+  margin-bottom: 0;
+}
+
+.header .header-content .header-text-subtitle {
+  margin-top: 0;
+  margin-left: 2rem;
+  margin-bottom: .5rem;
+  font-size: 1.75rem;
+  font-weight: bolder;
+  font-family: var(--font-text2);
+  color: var(--color-red);
 }
 
 .header .header-content .header-text span {
@@ -464,14 +477,22 @@ ol {
 }
 
 .header .header-content .header-text div img {
-  width: 60%;
+  width: 50%;
   max-width: 500px;
-  min-width: 250px;
+  min-width: 300px;
 }
 
-.header .header-content .header-text p {
+.header .header-content .header-text p:not(.header-text-subtitle) {
   width: 70%;
-  font-size: 1.2rem;
+  font-size: medium;
+}
+
+.header .header-content .header-text .header-text-box {
+  text-indent: 2rem;
+}
+
+.header .header-content .header-text .header-text-box-middle {
+  text-align: center;
 }
 
 .header .header-content .header-icons {
@@ -727,11 +748,17 @@ ol {
   font-weight: 700;
   font-size: x-large;
   text-align: center;
+  margin-bottom: 0;
+}
+
+.teachers p{
+  margin-top: 0;
+  text-align: center;
 }
 
 .teachers-box {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 1rem;
 }
@@ -746,8 +773,22 @@ ol {
 .teachers-box-grid div {
   width: 12rem;
   height: 15rem;
-  background-color: #C7352A;
-  position: relative;
+  border: .2rem solid #C7352A;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.teachers-box div img,
+.teachers-box-grid div {
+  width: 12rem;
+  border-radius: 1rem;
+}
+
+.teachers-box .interrogation img{
+  width: 7.5rem;
   border-radius: 1rem;
 }
 
@@ -848,7 +889,7 @@ ol {
 .local .local-content svg {
   width: 30px;
   height: 30px;
-  color: var(--color-blue);
+  color: var(--color-green);
 }
 
 .local .local-content .local-content-icons {
@@ -886,11 +927,15 @@ ol {
 
 
 .local .local-content h2 {
-  margin-top: 0;
+  margin: 0;
   text-transform: uppercase;
   font-family: var(--font-text2);
   font-size: xx-large;
-  color: var(--color-blue);
+  color: var(--color-green);
+}
+
+.local .local-content p {
+  margin-top: 0;
 }
 
 .local .local-img {
@@ -1088,7 +1133,8 @@ ol {
   display: flex;
 }
 
-.extra .extra-content svg {
+.extra .extra-content svg,
+.extra-content-box-out svg {
   width: 50px;
   height: 50px;
   margin-right: .5rem;
@@ -1099,14 +1145,25 @@ ol {
   display: flex;
 }
 
-.extra .extra-content .extra-content-box .extra-content-box-text {
+.extra .extra-content .extra-content-box .extra-content-box-text,
+.extra-content-box-out .extra-content-box-text {
   display: flex;
   flex-direction: column;
   font-size: small;
-  width: 8rem;
+  width: 12rem;
 }
 
-.extra .extra-content .extra-content-box .extra-content-box-text h2 {
+.extra-content-box-out {
+  text-align: center;
+  width: 16rem;
+}
+
+.extra-content-box-out .extra-content-box-text {
+  width: 16rem;
+}
+
+.extra .extra-content .extra-content-box .extra-content-box-text h2,
+.extra-content-box-out .extra-content-box-text h2 {
   text-transform: uppercase;
   font-family: var(--font-text2);
   font-weight: 700;
@@ -1115,7 +1172,8 @@ ol {
   margin: 0;
 }
 
-.extra .extra-content .extra-content-box .extra-content-box-text p {
+.extra .extra-content .extra-content-box .extra-content-box-text p,
+.extra-content-box-out .extra-content-box-text p {
   margin: 0;
 }
 
@@ -1268,11 +1326,9 @@ footer h1 {
 }
 
 @media (max-width: 750px) {
-  .extra .extra-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 1rem;
+
+  .extra .extra-content .extra-content-box .extra-content-box-text {
+    width: 8rem;
   }
 }
 
@@ -1325,13 +1381,31 @@ footer h1 {
     margin: 0;
   }
 
-  .header .header-content .header-text div img {
+  .header .header-content .header-text-subtitle {
     width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .header .header-content .header-text div img {
+    width: 80%;
+    margin-inline: 10%;
   }
 
   .header .header-content .header-text {
     font-size: large;
     padding-inline: 2rem;
+  }
+
+  .header .header-content .header-text p:not(.header-text-subtitle) {
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+  }
+
+  .header .header-content .header-icons {
+    justify-content: space-between;
+    text-align: center;
   }
 
   .header .header-content .header-lotes img {
@@ -1361,6 +1435,10 @@ footer h1 {
   .header .header-content .header-lotes .countdown-wrapper {
     width: 75%;
     margin-inline: 12.5%;
+  }
+
+  .header .header-content .header-text p {
+    width: 100%;
   }
 
   .event {
@@ -1548,17 +1626,29 @@ footer h1 {
     justify-content: space-between;
     padding-inline: 10%;
   }
+
+  .extra .extra-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .extra .extra-content .extra-content-box .extra-content-box-text,
+  .extra-content-box-out .extra-content-box-text {
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
 
-  .header .header-content .header-icons {
-    flex-direction: column;
+  .header .header-content .header-text div img {
+    width: 100%;
+    margin: 0;
+    min-width: 150px;
   }
 
-  .header .header-content .header-text p {
-    width: 100%;
-    font-size: 1.2rem;
+  .header .header-content .header-icons {
+    flex-direction: column;
   }
 
   .event .event-content h1,
@@ -1566,11 +1656,6 @@ footer h1 {
   .event .event-content .event-content-icons {
     width: 90%;
     margin-inline: 5%;
-  }
-
-  .extra .extra-content {
-    display: flex;
-    flex-direction: column;
   }
 
   .local .local-content .local-content-icons-grid {

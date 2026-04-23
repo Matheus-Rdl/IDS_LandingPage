@@ -135,8 +135,11 @@ function App() {
         <div className='header-content'>
           <div className='header-text'>
             <div>
-              <h2>Não é só dançar.<br></br><span>É pertencer</span></h2>
-              <img src='/images/festival-logo.png' />
+              <h2>Não é só dançar.<br></br><span>É pertencer.</span></h2>
+              <img src='/images/FestivalLogoHeader.png' />
+              <p className='header-text-subtitle'><span>Apresenta:</span> ENTRE IRMÃOS.</p>
+              <p className='header-text-box'>É uma experiência construída a partir do que vivemos dentro da Cia Irmãos de Samba mais do que aulas, uma experiência de troca, conexão e construção coletiva.</p>
+              <p className='header-text-box-middle'>&#128073;Aqui você não vem só aprender<br></br>Você vem fazer parte.</p>
               <p className='header-text-box'>3 dias de imersão pra sentir, trocar e viver o samba de dentro - com aulas, bailes, música ao vivo e conexão real.</p>
 
               {/* Icones do header */}
@@ -147,7 +150,7 @@ function App() {
                 </div>
                 <div>
                   <FaLocationDot />
-                  <p>Mie Kaikan - Vila Mariana</p>
+                  <p>Mie Kaikan - Vila Mariana - SP</p>
                 </div>
               </div>
 
@@ -209,11 +212,11 @@ function App() {
               <MdEmojiPeople />
               <MdAccessibility />
               <MdEmojiPeople />
-              <p>8 aulas e vivências (sem divisão por nível)</p>
+              <p>8 aulas e vivências</p>
             </div>
             <div>
               <GiRunningShoe />
-              <p>Prática real (não só teoria)</p>
+              <p>Prática real</p>
             </div>
             <div>
               <AiOutlineGlobal />
@@ -225,7 +228,7 @@ function App() {
             </div>
             <div>
               <FaUsers />
-              <p>Convivência com os professores</p>
+              <p>Rodas de conversas</p>
             </div>
             <div>
               <FaRegHeart />
@@ -242,21 +245,38 @@ function App() {
       {/* PROFESSORES */}
       <section className='teachers' id='professores'>
         <h1>Quem constroi essa experiência com você:</h1>
+        <p>Clicle nos profissionais para conhecer mais sobre eles!</p>
         <div className='teachers-content'>
           <div className='teachers-box'>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div className='teachers-box-exception'></div>
-            <div className='teachers-box-exception'></div>
+            <div>
+              <img src='/images/teachers/01_gui_amandinha.png'></img>
+            </div>
+            <div>
+              <img src='/images/teachers/02_thata_robson.png'></img>
+            </div>
+            <div className='interrogation'>
+              <img src='/images/teachers/teacher_interrogation.png'></img>
+            </div>
+            <div className='interrogation'>
+              <img src='/images/teachers/teacher_interrogation.png'></img>
+            </div>
+            <div className='interrogation'>
+              <img src='/images/teachers/teacher_interrogation.png'></img>
+            </div>
+            <div className='interrogation'>
+              <img src='/images/teachers/teacher_interrogation.png'></img>
+            </div>
+            {/*
+              <div className='teachers-box-exception'></div>
+              <div className='teachers-box-exception'></div>
+            */}
           </div>
-          <div className='teachers-box-grid'>
-            <div></div>
-            <div></div>
-          </div>
+          {/*
+            <div className='teachers-box-grid'>
+              <div></div>
+              <div></div>
+            </div>
+          */}
         </div>
         <div className='teacher-btn'>
           <a
@@ -342,12 +362,13 @@ function App() {
       {/* LOCAL */}
       <section className='local' id='localizacao'>
         <div className='local-img'>
-          <img src='/images/MieKaikan.png' />
+          <img src='/images/Mie-Kaikan.avif' />
         </div>
         <div className='local-content'>
           <h1>Você vai viver isso tudo em um<br></br>
             espaço estruturado:</h1>
-          <h2>Mie kaikan - Vila mariana</h2>
+          <h2>Mie kaikan - Vila mariana - São Paulo</h2>
+          <p>Endereço: Av. Lins de Vasconcelos, 3352 - Vila Mariana, São Paulo - SP, 04112-002<br></br>(em frente ao metrô Vila Mariana)</p>
           <div className='local-content-icons'>
             <div>
               <PiWheelchairFill />
@@ -493,15 +514,18 @@ function App() {
             <FaLocationDot />
             <div className='extra-content-box-text'>
               <h2>Como chegar</h2>
-              <p>Fácil acesso de metrô, ônibus e carro.</p>
+              <p>Fácil acesso de ônibus, carro e metrô (em frente a estação Vila Mariana).</p>
             </div>
           </div>
-          <div className='extra-content-box'>
-            <IoLogoWhatsapp />
-            <div className='extra-content-box-text'>
-              <h2>Dúvidas</h2>
-              <p>Fale com a gente pelo<br></br>(11) 96685-9777.</p>
-            </div>
+        </div>
+        <div className='extra-content-box-out'>
+          <IoLogoWhatsapp />
+          <div className='extra-content-box-text'>
+            <h2>Dúvidas</h2>
+            <p>Fale com a gente pelo<br></br>
+              (11) 96685-9777 - Amanda<br></br>
+              (11) 98383-0732 - Thata<br></br>
+              (11) 96252-9013 - Vanessinha<br></br></p>
           </div>
         </div>
       </section>
@@ -513,7 +537,7 @@ function App() {
           <img src="/images/Footer-wave-left.png" className='footer-wave-2' />
         </div>
         <div className='footer'>
-          <h1>Irmãos de Samba - Viva de dentro<br></br>
+          <h1>Irmãos de Samba - Entre irmãos<br></br>
             24 a 25 de Julho | São Paulo</h1>
         </div>
       </footer>
