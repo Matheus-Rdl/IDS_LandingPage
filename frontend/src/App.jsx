@@ -95,7 +95,7 @@ function App() {
             <a onClick={handleMenu} href="#programacao">Programação</a>
             <a onClick={handleMenu} href="#localizacao">Localização</a>
             <a onClick={handleMenu} href="#ingressos">Ingressos</a>
-            <a onClick={handleMenu} >Fale conosco</a>
+            <a onClick={handleMenu} href="#extra">Fale conosco</a>
           </div>
           <img src='/images/logo-ids.png' className='logo-menu' />
           <IoClose className='header-close-menu' onClick={() => setShowNav(!showNav)} />
@@ -137,6 +137,7 @@ function App() {
             <div>
               <h2>Não é só dançar.<br></br><span>É pertencer.</span></h2>
               <img src='/images/FestivalLogoHeader.png' />
+              <p className='year'>Edição São Paulo - 2026</p>
               <h3 className='header-text-subtitle'><span>Apresenta:</span> ENTRE IRMÃOS.</h3>
               <p className='header-text-box'>Uma experiência construída a partir do que vivemos dentro da Cia Irmãos de Samba.</p>
               <p className='header-text-box-span'>Mais do que aulas, uma experiência de troca, conexão e construção coletiva.</p>
@@ -303,12 +304,26 @@ function App() {
                 <img src='/images/teachers/02_thata_robson.png'></img>
               </div>
             </a>
-            <div className='interrogation'>
-              <img src='/images/teachers/teacher_interrogation.png'></img>
-            </div>
-            <div className='interrogation'>
-              <img src='/images/teachers/teacher_interrogation.png'></img>
-            </div>
+
+            <a
+              href="https://www.instagram.com/anierenatinho/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img src='/images/teachers/ani_renatinho.png'></img>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/petyevanessinha/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img src='/images/teachers/pety_van.png'></img>
+              </div>
+            </a>
             <div className='interrogation'>
               <img src='/images/teachers/teacher_interrogation.png'></img>
             </div>
@@ -370,17 +385,18 @@ function App() {
         <div className='agenda-content'>
           <div className='agenda-content-box'>
             <h2>Sexta-feira</h2>
+            <p><strong>Baile de Abertura</strong></p>
 
             <div>
               <div>
                 <p>
-                  <strong>20h às 1h</strong><br></br>
-                  &#127881;Baile abertura <br></br>
-                  &#128204;Gafieira da ladeira</p>
+                  &#128204;Gafieira da ladeira<br></br>
+                  <em>20h às 1h</em>
+                </p>
 
                 <ul>
                   <li>Dj Belo</li>
-                  <li>Interação especial</li>
+                  <li>Interações e surpresas...</li>
                 </ul>
               </div>
 
@@ -389,47 +405,68 @@ function App() {
 
           <div className='agenda-content-box'>
             <h2>Sábado</h2>
-
+            <p>
+              &#128204;Mie Kaikan<br></br>
+            </p>
             <div>
-              <div>
-                <p><strong>9h às 10h30</strong><br></br>
-                  &#9749;Cáfe da manhã incluso</p>
-              </div>
+              <p>
+                &#9749;Cáfe da manhã incluso<br></br>
+                <em>9h</em>
+              </p>
+              <p>
+                &#127891;Aulas e vivênvias<br></br>
+                <em>10h às 14h30</em>
+              </p>
 
-              <div>
-                <p>
-                  <strong>11h às 14h</strong><br></br>
-                  &#127891;Aulas e vivênvias
-                </p>
-              </div>
+              <p><strong>Festa dos Irmãos</strong></p>
 
-              <div>
-                <p><strong>17h30</strong><br></br>
-                  &#127917;Show da cia</p>
-              </div>
+              <p>
+                &#127917;Recepção e Apresentações<br></br>
+                <em>17h30</em>
+              </p>
 
-              <div>
-                <p><strong>18h30 às 22h30</strong><br></br>
-                  &#128131;Baile</p>
-                <ul>
-                  <li>Banda Universo Gafieira</li>
-                  <li>DJs Erivaldo e Belo</li>
-                </ul>
-              </div>
+              <p>
+                &#128131;Baile principal<br></br>
+                <em>16h30</em>
+              </p>
+
+              <ul>
+                <li>Dj Erivaldo (BSB)</li>
+                <li>DJ Belo</li>
+                <li>Banda Universo Gafieira</li>
+              </ul>
             </div>
           </div>
 
           <div className='agenda-content-box'>
             <h2>Domingo</h2>
 
+            <p>
+              &#128204;Mie Kaikan<br></br>
+            </p>
+
             <div>
-              <p><strong>9h às 14h</strong><br></br>
-                &#127891;Aulas e vivências</p>
+              <p>
+                &#127891;Aulas e vivênvias<br></br>
+                <em>9h30 às 15h</em>
+              </p>
+
+              <p><strong>Domingueira dos Irmãos</strong></p>
+
+              <p>
+                &#127835;Feijodada beneficente com roda de samba<br></br>
+                <em>15h às 17h</em>
+              </p>
+
+              <p>
+                &#128131;Baile de encerramento<br></br>
+                <em>16h30 às 20h</em>
+              </p>
 
               <ul>
-                <li>Feijodada beneficente</li>
-                <li>Roda de Samba </li>
-                <li>Baile com DJ</li>
+                <li>Dj Erivaldo (BSB)</li>
+                <li>Banda Natália Nagê</li>
+                <li>Interações surpresas</li>
               </ul>
             </div>
           </div>
@@ -465,7 +502,7 @@ function App() {
         <div className='local-content'>
           <h1>Você vai viver isso tudo em um<br></br>
             espaço estruturado:</h1>
-          <h2>Mie kaikan - Vila mariana - São Paulo</h2>
+          <h2>Mie kaikan - Vila mariana</h2>
           <p>Av. Lins de Vasconcelos, 3352 - Vila Mariana, São Paulo<br></br>(em frente ao metrô Vila Mariana)</p>
           <div className='local-content-icons'>
             <div>
@@ -533,7 +570,7 @@ function App() {
                 </div>
                 {/*
                 */}
-                <p className='day'>Até 30/abr</p>
+                <p className='day day-off'>01/mai até 30/jun</p>
               </div>
               <div className='money-content-box-bill-price-content'>
                 <div>
@@ -542,7 +579,7 @@ function App() {
                 </div>
                 {/*
                 */}
-                <p className='day'>Até 30/abr</p>
+                <p className='day day-off'>01/jul até 24/jul</p>
               </div>
             </div>
             <h3>&#128073;Vagas limitadas</h3>
@@ -569,13 +606,12 @@ function App() {
               </div>
             </div>
 
-            <p>Os valores dos bailes antecipados é até o dia <strong>23, às 23:59hrs</strong></p>
+            <p>Os valores dos bailes antecipados é até o dia <strong>23 de julho, às 23:59hrs</strong></p>
 
             {/*
             <p>Feijoada beneficente à parte = 35 reais <br></br> Tem opção vegetariana</p>
             */}
           </div>
-          {/*
           <div className='money-content-box-pix'>
 
             <h1>PIX: ingressoids@gmail.com</h1>
@@ -586,12 +622,10 @@ function App() {
               Temos condições especiais<br></br>
               Entre em contato</h2>
           </div>
-*/}
         </div>
 
         <p className='money-box-condition'>Caso deseje parcelar ou alguma condição de pagamento diferenciada, <strong>entrar em contato!</strong></p>
 
-        {/*
         <div className='money-content-box-pix-tablet'>
           <h1>PIX: ingressoids@gmail.com</h1>
           <h2>Enviar comprovante para <br></br>
@@ -601,7 +635,6 @@ function App() {
             Temos condições especiais<br></br>
             Entre em contato</h2>
         </div>
-        */}
 
         <div className='money-btn'>
           <a
@@ -613,7 +646,7 @@ function App() {
       </section>
 
       {/* EXTRAS */}
-      <section section className='extra' >
+      <section section className='extra' id='extra'>
         <h1>Informações extras</h1>
         <div className='extra-content'>
           <div className='extra-content-box'>
@@ -642,9 +675,20 @@ function App() {
           <IoLogoWhatsapp />
           <div className='extra-content-box-text'>
             <h2>Dúvidas</h2>
-            <p>Fale com a gente pelo<br></br>
-              (11) 98383-0732 - Thata<br></br>
-              (11) 96252-9013 - Vanessinha<br></br></p>
+            <p>Clique nos numeros para ser redirecionado ao WhatsApp:</p>
+            <p><strong>
+              <a
+                href="https://wa.me/5511983830732"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                (11) 98383-0732 - Thata<IoLogoWhatsapp className='svg-out' /></a></strong><br></br><strong>
+                <a
+                  href="https://wa.me/551162529013"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  (11) 96252-9013 - Vanessinha</a></strong><IoLogoWhatsapp className='svg-out' /><br></br></p>
           </div>
         </div>
       </section>
