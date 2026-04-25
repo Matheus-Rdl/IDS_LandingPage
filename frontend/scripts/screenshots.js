@@ -45,7 +45,7 @@ const __dirname = path.dirname(__filename);
       deviceScaleFactor: 1,
     });
 
-    await page.goto('http://localhost:5174', {
+    await page.goto('http://localhost:5173', {
       waitUntil: 'networkidle2',
     });
 

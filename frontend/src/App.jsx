@@ -137,8 +137,9 @@ function App() {
             <div>
               <h2>Não é só dançar.<br></br><span>É pertencer.</span></h2>
               <img src='/images/FestivalLogoHeader.png' />
-              <p className='header-text-subtitle'><span>Apresenta:</span> ENTRE IRMÃOS.</p>
-              <p className='header-text-box'>É uma experiência construída a partir do que vivemos dentro da Cia Irmãos de Samba mais do que aulas, uma experiência de troca, conexão e construção coletiva.</p>
+              <h3 className='header-text-subtitle'><span>Apresenta:</span> ENTRE IRMÃOS.</h3>
+              <p className='header-text-box'>Uma experiência construída a partir do que vivemos dentro da Cia Irmãos de Samba.</p>
+              <p className='header-text-box-span'>Mais do que aulas, uma experiência de troca, conexão e construção coletiva.</p>
               <p className='header-text-box-middle'>&#128073;Aqui você não vem só aprender<br></br>Você vem fazer parte.</p>
               <p className='header-text-box'>3 dias de imersão pra sentir, trocar e viver o samba de dentro - com aulas, bailes, música ao vivo e conexão real.</p>
 
@@ -146,11 +147,11 @@ function App() {
               <div className='header-icons'>
                 <div>
                   <FaRegCalendarAlt />
-                  <p>24 a 26 de julho</p>
+                  <p><strong>24 a 26 de julho</strong></p>
                 </div>
                 <div>
                   <FaLocationDot />
-                  <p>Mie Kaikan - Vila Mariana - SP</p>
+                  <p><strong>Mie Kaikan - Vila Mariana - São Paulo</strong></p>
                 </div>
               </div>
 
@@ -243,11 +244,46 @@ function App() {
       </section >
 
       {/* PROFESSORES */}
-      <section className='teachers' id='professores'>
+      <section className='professional' id='professores'>
         <h1>Quem constroi essa experiência com você:</h1>
-        <p>Clicle nos profissionais para conhecer mais sobre eles!</p>
+        <p>Clique nos profissionais para conhecer mais sobre eles!</p>
         <div className='teachers-content'>
+          <h2>Professores</h2>
           <div className='teachers-box'>
+
+            {/*
+            <a
+              href="https://www.instagram.com/guiih_amandinha/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img src='/images/teachers/01_gui_amandinha.png'></img>
+              </div>
+            </a>
+            <a
+              href="https://www.instagram.com/thataerobson/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img src='/images/teachers/02_thata_robson.png'></img>
+              </div>
+            </a>
+            <div>
+              <img src='/images/teachers/ani_renatinho.png'></img>
+            </div>
+            <div>
+              <img src='/images/teachers/camila_ricardo.png'></img>
+            </div>
+            <div>
+              <img src='/images/teachers/flavia_vini.png'></img>
+            </div>
+            <div>
+              <img src='/images/teachers/pety_van.png'></img>
+            </div>
+            */}
+
             <a
               href="https://www.instagram.com/guiih_amandinha/"
               target="_blank"
@@ -284,6 +320,34 @@ function App() {
               <div className='teachers-box-exception'></div>
             */}
           </div>
+
+          {/*
+          <h2>Bandas</h2>
+          <div className='djs-box'></div>
+*/}
+
+          <h2>DJs</h2>
+          <div className='djs-box'>
+            <a
+              href="https://www.instagram.com/djrobson_belo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img src='/images/djs/dj_belo.png'></img>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/djerivaldo_alves/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img src='/images/djs/dj_eri.png'></img>
+              </div>
+            </a>
+          </div>
           {/*
             <div className='teachers-box-grid'>
               <div></div>
@@ -309,9 +373,10 @@ function App() {
 
             <div>
               <div>
-                <p> Baile abertura <br></br>
-                  Gafieira da ladeira <br></br>
-                  20h às 1h</p>
+                <p>
+                  <strong>20h às 1h</strong><br></br>
+                  &#127881;Baile abertura <br></br>
+                  &#128204;Gafieira da ladeira</p>
 
                 <ul>
                   <li>Dj Belo</li>
@@ -327,24 +392,28 @@ function App() {
 
             <div>
               <div>
-                <p>9h às 14h <br></br>
-                  Aulas e vivências <br></br>
-                  Cáfe da manhã incluso</p>
+                <p><strong>9h às 10h30</strong><br></br>
+                  &#9749;Cáfe da manhã incluso</p>
               </div>
 
               <div>
-                <p>17h30 <br></br>
-                  Apresentações</p>
+                <p>
+                  <strong>11h às 14h</strong><br></br>
+                  &#127891;Aulas e vivênvias
+                </p>
               </div>
 
               <div>
-                <p>18h30 às 22h30 <br></br>
-                  Baile</p>
+                <p><strong>17h30</strong><br></br>
+                  &#127917;Show da cia</p>
+              </div>
 
+              <div>
+                <p><strong>18h30 às 22h30</strong><br></br>
+                  &#128131;Baile</p>
                 <ul>
                   <li>Banda Universo Gafieira</li>
                   <li>DJs Erivaldo e Belo</li>
-                  <li>Show da cia</li>
                 </ul>
               </div>
             </div>
@@ -354,19 +423,29 @@ function App() {
             <h2>Domingo</h2>
 
             <div>
-              <p>9h às 14h <br></br>
-                Aulas e vivências</p>
+              <p><strong>9h às 14h</strong><br></br>
+                &#127891;Aulas e vivências</p>
 
-              <p>Feijodada beneficente <br></br>
-                Roda de Samba <br></br>
-                Baile com DJ</p>
+              <ul>
+                <li>Feijodada beneficente</li>
+                <li>Roda de Samba </li>
+                <li>Baile com DJ</li>
+              </ul>
             </div>
           </div>
-        </div>
+        </div >
 
-        <div className='agenda-content-beans'>
-          <img src='/images/feijoada-left.jfif'/>
-          <img src='/images/feijoada-right.png'/>
+        <div className='agenda-beans'>
+          <div className='agenda-beans-img'>
+            <img src='/images/feijoada-img-big.jpg' />
+          </div>
+          {/*<img src='/images/feijoada-right.png'/>*/}
+          <div className='agenda-beans-title'>
+            <h1>Domingão tem feijuca!</h1>
+          </div>
+          <div className='agenda-beans-content'>
+            <p>Feijoada beneficente à parte = 35 reais Tem opção vegetariana</p>
+          </div>
         </div>
 
         <div className='agenda-btn'>
@@ -379,7 +458,7 @@ function App() {
       </section >
 
       {/* LOCAL */}
-      <section className='local' id='localizacao'>
+      <section section className='local' id='localizacao' >
         <div className='local-img'>
           <img src='/images/Mie-Kaikan.avif' />
         </div>
@@ -387,7 +466,7 @@ function App() {
           <h1>Você vai viver isso tudo em um<br></br>
             espaço estruturado:</h1>
           <h2>Mie kaikan - Vila mariana - São Paulo</h2>
-          <p>Endereço: Av. Lins de Vasconcelos, 3352 - Vila Mariana, São Paulo - SP, 04112-002<br></br>(em frente ao metrô Vila Mariana)</p>
+          <p>Av. Lins de Vasconcelos, 3352 - Vila Mariana, São Paulo<br></br>(em frente ao metrô Vila Mariana)</p>
           <div className='local-content-icons'>
             <div>
               <PiWheelchairFill />
@@ -429,27 +508,41 @@ function App() {
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* PAGAMENTO */}
-      <section className='money' id='ingressos'>
+      <section section className='money' id='ingressos' >
         <div className='money-content'>
           <div className='money-content-box-bill'>
             <h1>Garanta a sua vaga!</h1>
             <h2>full pass (experiência completa)</h2>
 
             <div className='money-content-box-bill-price'>
-              <div>
-                <p>1º lote</p>
-                <p><span>R$287</span></p>
+              <div className='money-content-box-bill-price-content'>
+                <p className='lote-atual'>Atual</p>
+                <div>
+                  <p>1º lote</p>
+                  <p><span>R$287</span></p>
+                </div>
+                <p className='day'>Até 30/abr</p>
               </div>
-              <div>
-                <p>2º lote</p>
-                <p><span>R$357</span></p>
+              <div className='money-content-box-bill-price-content'>
+                <div>
+                  <p>2º lote</p>
+                  <p><span>R$357</span></p>
+                </div>
+                {/*
+                */}
+                <p className='day'>Até 30/abr</p>
               </div>
-              <div>
-                <p>3º lote</p>
-                <p><span>R$397</span></p>
+              <div className='money-content-box-bill-price-content'>
+                <div>
+                  <p>3º lote</p>
+                  <p><span>R$397</span></p>
+                </div>
+                {/*
+                */}
+                <p className='day'>Até 30/abr</p>
               </div>
             </div>
             <h3>&#128073;Vagas limitadas</h3>
@@ -475,9 +568,14 @@ function App() {
                 <h2>R$40</h2>
               </div>
             </div>
-            <p>Feijoada beneficente à parte = 35 reais <br></br> Tem opção vegetariana</p>
-          </div>
 
+            <p>Os valores dos bailes antecipados é até o dia <strong>23, às 23:59hrs</strong></p>
+
+            {/*
+            <p>Feijoada beneficente à parte = 35 reais <br></br> Tem opção vegetariana</p>
+            */}
+          </div>
+          {/*
           <div className='money-content-box-pix'>
 
             <h1>PIX: ingressoids@gmail.com</h1>
@@ -488,9 +586,12 @@ function App() {
               Temos condições especiais<br></br>
               Entre em contato</h2>
           </div>
-
+*/}
         </div>
 
+        <p className='money-box-condition'>Caso deseje parcelar ou alguma condição de pagamento diferenciada, <strong>entrar em contato!</strong></p>
+
+        {/*
         <div className='money-content-box-pix-tablet'>
           <h1>PIX: ingressoids@gmail.com</h1>
           <h2>Enviar comprovante para <br></br>
@@ -499,8 +600,8 @@ function App() {
           <h2><span>vem de fora de SP?</span><br></br>
             Temos condições especiais<br></br>
             Entre em contato</h2>
-
         </div>
+        */}
 
         <div className='money-btn'>
           <a
@@ -512,7 +613,7 @@ function App() {
       </section>
 
       {/* EXTRAS */}
-      <section className='extra'>
+      <section section className='extra' >
         <h1>Informações extras</h1>
         <div className='extra-content'>
           <div className='extra-content-box'>
@@ -542,7 +643,6 @@ function App() {
           <div className='extra-content-box-text'>
             <h2>Dúvidas</h2>
             <p>Fale com a gente pelo<br></br>
-              (11) 96685-9777 - Amanda<br></br>
               (11) 98383-0732 - Thata<br></br>
               (11) 96252-9013 - Vanessinha<br></br></p>
           </div>
@@ -557,7 +657,7 @@ function App() {
         </div>
         <div className='footer'>
           <h1>Irmãos de Samba - Entre irmãos<br></br>
-            24 a 25 de Julho | São Paulo</h1>
+            24 a 26 de Julho | São Paulo</h1>
         </div>
       </footer>
 
