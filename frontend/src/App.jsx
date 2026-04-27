@@ -563,7 +563,7 @@ function App() {
                   <p>1º lote</p>
                   <p><span>R$287</span></p>
                 </div>
-                <p className='day'>Até 30/abr</p>
+                <p className='day'>(Até 30/abr)</p>
               </div>
               <div className='money-content-box-bill-price-content'>
                 <div>
@@ -572,7 +572,7 @@ function App() {
                 </div>
                 {/*
                 */}
-                <p className='day day-off'>01/mai até 30/jun</p>
+                <p className='day day-off'>(01/mai até 30/jun)</p>
               </div>
               <div className='money-content-box-bill-price-content'>
                 <div>
@@ -581,7 +581,7 @@ function App() {
                 </div>
                 {/*
                 */}
-                <p className='day day-off'>01/jul até 24/jul</p>
+                <p className='day day-off'>(01/jul até 24/jul)</p>
               </div>
             </div>
             <h3>&#128073;Vagas limitadas</h3>
