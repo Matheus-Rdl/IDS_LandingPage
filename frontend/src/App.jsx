@@ -383,27 +383,26 @@ function App() {
       <section className='agenda' id='programacao'>
         <h1>Como será o evento - <span>programação</span></h1>
         <div className='agenda-content'>
+
           <div className='agenda-content-box'>
             <h2>Sexta-feira</h2>
             <p><strong>Baile de Abertura</strong></p>
 
-            <div>
-              <div>
-                <p>
-                  &#128204;Gafieira da ladeira<br></br>
-                  <ul>
-                    <li>Rua Mourato Coelho 466, Pinheiros</li>
-                  </ul>
-                  <em>20h às 1h</em>
-                </p>
+            <p>
+              &#128204;Gafieira da ladeira<br></br>
+              <ul>
+                <li>Rua Mourato Coelho 466, Pinheiros</li>
+              </ul>
+              <em>20h às 1h</em>
+            </p>
 
-                <ul>
-                  <li>Dj Belo</li>
-                  <li>Interações e surpresas...</li>
-                </ul>
-              </div>
+            <ul>
+              <li>Dj Belo</li>
+              <li>Interações e surpresas...</li>
+            </ul>
 
-            </div>
+            <img src='/images/agenda/agenda_1.jpg' />
+
           </div>
 
           <div className='agenda-content-box'>
@@ -411,34 +410,35 @@ function App() {
             <p>
               &#128204;Mie Kaikan<br></br>
             </p>
-            <div>
-              <p>
-                &#9749;Recepção com café da manhã incluso<br></br>
-                <em>9h</em>
-              </p>
-              <p>
-                &#127891;Aulas e vivênvias<br></br>
-                <em>10h às 14h30</em>
-              </p>
+            <p>
+              &#9749;Recepção com café da manhã incluso<br></br>
+              <em>9h</em>
+            </p>
+            <p>
+              &#127891;Aulas e vivênvias<br></br>
+              <em>10h às 14h30</em>
+            </p>
 
-              <p><strong>Festa dos Irmãos</strong></p>
+            <p><strong>Festa dos Irmãos</strong></p>
 
-              <p>
-                &#127917;Recepção e Show da Cia<br></br>
-                <em>17h</em>
-              </p>
+            <p>
+              &#127917;Recepção e Show da Cia<br></br>
+              <em>17h</em>
+            </p>
 
-              <p>
-                &#128131;Baile principal<br></br>
-                <em>18h30</em>
-              </p>
+            <p>
+              &#128131;Baile principal<br></br>
+              <em>18h30</em>
+            </p>
 
-              <ul>
-                <li>Dj Erivaldo (BSB)</li>
-                <li>DJ Belo</li>
-                <li>Banda Universo Gafieira</li>
-              </ul>
-            </div>
+            <ul>
+              <li>Dj Erivaldo (BSB)</li>
+              <li>DJ Belo</li>
+              <li>Banda Universo Gafieira</li>
+            </ul>
+
+            <img src='/images/agenda/agenda_2.jpg' />
+
           </div>
 
           <div className='agenda-content-box'>
@@ -448,30 +448,31 @@ function App() {
               &#128204;Mie Kaikan<br></br>
             </p>
 
-            <div>
-              <p>
-                &#127891;Aulas e vivências<br></br>
-                <em>9h30 às 15h</em>
-              </p>
+            <p>
+              &#127891;Aulas e vivências<br></br>
+              <em>9h30 às 15h</em>
+            </p>
 
-              <p><strong>Domingueira dos Irmãos</strong></p>
+            <p><strong>Domingueira dos Irmãos</strong></p>
 
-              <p>
-                &#127835;Feijoada beneficente com roda de samba<br></br>
-                <em>15h às 17h</em>
-              </p>
+            <p>
+              &#127835;Feijoada beneficente com roda de samba<br></br>
+              <em>15h às 17h</em>
+            </p>
 
-              <p>
-                &#128131;Baile de encerramento<br></br>
-                <em>16h30 às 20h</em>
-              </p>
+            <p>
+              &#128131;Baile de encerramento<br></br>
+              <em>16h30 às 20h</em>
+            </p>
 
-              <ul>
-                <li>Dj Erivaldo (BSB)</li>
-                <li>Banda Natália Nagê</li>
-                <li>Interações surpresas</li>
-              </ul>
-            </div>
+            <ul>
+              <li>Dj Erivaldo (BSB)</li>
+              <li>Banda Natália Nagê</li>
+              <li>Interações surpresas</li>
+            </ul>
+
+            <img src='/images/agenda/agenda_3.jpg' />
+
           </div>
         </div >
 
@@ -484,7 +485,7 @@ function App() {
             <h1>Domingão tem feijuca!</h1>
           </div>
           <div className='agenda-beans-content'>
-            <p>Feijoada beneficente à parte = 35 reais<br></br><em>(tem opção vegetariana).</em></p>
+            <p>Feijoada beneficente à parte<br></br><strong>35 reais</strong><br></br><em>(tem opção vegetariana).</em></p>
           </div>
         </div>
 

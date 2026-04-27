@@ -899,6 +899,54 @@ ol {
   border: 1.5px solid black;
   border-radius: 1rem;
   width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+
+.agenda .agenda-content .agenda-content-box div {
+  position: relative;
+  overflow: hidden;
+}
+
+.agenda .agenda-content .agenda-content-box img {
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.agenda .agenda-content .agenda-content-box:nth-child(1) img {
+  margin-bottom: -25%;
+
+  mask-image: linear-gradient(to top,
+      black 0%,
+      black 10%,
+      rgba(0, 0, 0, 0.8) 75%,
+      rgba(0, 0, 0, 0.4) 90%,
+      transparent 100%);
+}
+
+.agenda .agenda-content .agenda-content-box:nth-child(2) img {
+
+  mask-image: linear-gradient(to top,
+      black 0%,
+      black 15%,
+      rgba(0, 0, 0, 0.8) 65%,
+      rgba(0, 0, 0, 0.4) 80%,
+      transparent 100%);
+}
+
+.agenda .agenda-content .agenda-content-box:nth-child(3) img {
+  margin-bottom: -10%;
+
+  mask-image: linear-gradient(to top,
+      black 0%,
+      black 10%,
+      rgba(0, 0, 0, 0.8) 75%,
+      rgba(0, 0, 0, 0.4) 90%,
+      transparent 100%);
 }
 
 .agenda .agenda-content .agenda-content-box h2 {
@@ -1312,7 +1360,7 @@ ol {
   color: var(--color-blue);
 }
 
-.extra .extra-content .clip-svg{
+.extra .extra-content .clip-svg {
   color: var(--color-orange-dark);
 }
 
@@ -1468,6 +1516,19 @@ footer h1 {
     padding-inline: .5rem;
   }
 
+  .agenda .agenda-content .agenda-content-box:nth-child(1) img {
+    margin-bottom: 0;
+  }
+
+  .agenda .agenda-content .agenda-content-box:nth-child(2) img {
+    width: 130%;
+  }
+
+  .agenda .agenda-content .agenda-content-box:nth-child(3) img {
+    width: 110%;
+    margin-bottom: 0;
+  }
+
   .money .money-content .money-content-box-party {}
 
   .money .money-content .money-content-box-party-price div {
@@ -1528,6 +1589,18 @@ footer h1 {
 
   .agenda .agenda-beans .agenda-beans-content {
     text-align: center;
+  }
+
+  .agenda .agenda-content .agenda-content-box:nth-child(1) img {
+    width: 150%;
+  }
+
+  .agenda .agenda-content .agenda-content-box:nth-child(2) img {
+    width: 175%;
+  }
+
+  .agenda .agenda-content .agenda-content-box:nth-child(3) img {
+    width: 140%;
   }
 
 
@@ -1716,7 +1789,7 @@ footer h1 {
     border: 1.5px solid black;
     border-radius: 1rem;
     width: 75%;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
   }
 
 
@@ -1725,6 +1798,31 @@ footer h1 {
     height: auto;
     padding-bottom: 1.5rem;
     margin-top: 0;
+  }
+
+  .agenda .agenda-content .agenda-content-box img {
+    transform: translateX(0);
+    width: 100%;
+    position: static;
+    left: 0;
+  }
+
+  .agenda .agenda-content .agenda-content-box:nth-child(1) img {
+    width: 115%;
+    transform: translateX(-7.5%);
+    margin-bottom: -80%;
+  }
+
+  .agenda .agenda-content .agenda-content-box:nth-child(2) img {
+    width: 125%;
+    transform: translateX(-10%);
+    margin-bottom: -10%;
+  }
+
+  .agenda .agenda-content .agenda-content-box:nth-child(3) img {
+    width: 125%;
+    transform: translateX(-10%);
+    margin-bottom: -25%;
   }
 
 
