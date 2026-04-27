@@ -1177,6 +1177,10 @@ ol {
 
 }
 
+.money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content:nth-child(1) {
+  background-color: rgb(255, 84, 22, 0.3);
+}
+
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content p {
   margin-bottom: 0;
 }

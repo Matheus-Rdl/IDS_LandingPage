@@ -390,9 +390,7 @@ function App() {
 
             <p>
               &#128204;Gafieira da ladeira<br></br>
-              <ul>
-                <li>Rua Mourato Coelho 466, Pinheiros</li>
-              </ul>
+              Rua Mourato Coelho 466, Pinheiros<br></br>
               <em>20h às 1h</em>
             </p>
 
