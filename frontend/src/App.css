@@ -455,11 +455,11 @@ ol {
   text-transform: uppercase;
   font-family: var(--font-text2);
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   border-radius: 2rem;
   margin-top: -3rem;
   margin-left: 7.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   line-height: 1.75rem;
 }
 
@@ -1079,8 +1079,11 @@ ol {
 
 .money .money-content .money-content-box-bill {
   border: 1.5px solid black;
-  padding: 1rem 2rem 0rem 2rem;
+  padding: 1rem 1rem 0rem 1rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .money .money-content .money-content-box-bill h1 {
@@ -1089,6 +1092,7 @@ ol {
   font-weight: 700;
   font-size: x-large;
   text-align: center;
+
 }
 
 .money .money-content .money-content-box-bill h2 {
@@ -1101,14 +1105,17 @@ ol {
 }
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price {
+
   display: flex;
   justify-content: space-between;
   text-align: center;
   gap: .5rem;
   align-items: center;
+
 }
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content {
+
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -1119,6 +1126,7 @@ ol {
   justify-content: center;
   position: relative;
   overflow: hidden;
+
 }
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content p {
@@ -1130,7 +1138,7 @@ ol {
   top: 0;
   right: 0;
   margin-right: -2rem;
-  font-size: small;
+  font-size: smaller;
   background-color: var(--color-blue);
   padding-inline: 2rem;
   transform: rotate(45deg)
@@ -1138,20 +1146,26 @@ ol {
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content .day {
   margin-top: .2rem;
+  font-size: .75rem;
+  margin-inline: 1.5rem;
 }
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content .day-off {
-  font-size: smaller;
+  /*font-size: smaller;*/
+  margin-inline: 0;
 }
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content:nth-child(1) {
   padding: 1rem 1rem 1.5rem 1rem;
   border: 2px solid var(--color-red);
+
 }
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content span {
+
   color: var(--color-orange-dark);
   font-size: x-large;
+
 }
 
 .money .money-content .money-content-box-bill h3 {
@@ -1168,7 +1182,7 @@ ol {
   text-align: center;
   gap: .5rem;
   border: 1.5px solid black;
-  padding: 1rem 2rem 0rem 2rem;
+  padding: 1rem 1rem 0rem 1rem;
   border-radius: 1rem;
 }
 
@@ -1278,18 +1292,28 @@ ol {
   font-size: x-large;
   text-align: center;
   color: var(--color-blue);
+  margin-bottom: 0;
+}
+
+.extra .extra-subtitle {
+  margin-top: 0;
+  text-align: center;
 }
 
 .extra .extra-content {
   display: flex;
 }
 
-.extra .extra-content svg,
+.extra .extra-content svg:not(.clip-svg),
 .extra-content-box-out svg {
   width: 50px;
   height: 50px;
   margin-right: .5rem;
   color: var(--color-blue);
+}
+
+.extra .extra-content .clip-svg{
+  color: var(--color-orange-dark);
 }
 
 .extra-content-box-out .extra-content-box-text .svg-out {
@@ -1542,7 +1566,7 @@ footer h1 {
     text-transform: uppercase;
     font-family: var(--font-text2);
     font-weight: 700;
-    font-size: xx-large;
+    font-size: x-large;
     margin-top: 0rem;
     margin-left: 0;
     text-align: center;
@@ -1779,7 +1803,7 @@ footer h1 {
   .money .money-content .money-content-box-bill,
   .money .money-content .money-content-box-party {
     border: none;
-    padding: 1rem 2rem 0rem 2rem;
+    padding: 1rem 1rem 0rem 1rem;
     border-radius: 1rem;
   }
 
@@ -1794,6 +1818,17 @@ footer h1 {
 
   .money .money-content-box-pix-tablet h1 {
     margin-top: 1rem;
+  }
+
+  .extra .extra-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .extra .extra-content .extra-content-box .extra-content-box-text,
+  .extra-content-box-out .extra-content-box-text {
+    width: 100%;
   }
 
   .footer-waves .footer-wave-1 {
@@ -1929,17 +1964,6 @@ footer h1 {
     gap: .5rem;
     align-items: center;
   }
-
-  .extra .extra-content {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-  }
-
-  .extra .extra-content .extra-content-box .extra-content-box-text,
-  .extra-content-box-out .extra-content-box-text {
-    width: 100%;
-  }
 }
 
 @media (max-width: 450px) {
@@ -1954,7 +1978,7 @@ footer h1 {
     flex-direction: column;
   }
 
-  .header .header-content .header-icons div{
+  .header .header-content .header-icons div {
     text-align: left;
   }
 

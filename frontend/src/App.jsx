@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-import { FaRegCalendarAlt, FaRegHeart, FaMale, FaFemale } from "react-icons/fa";
+import { FaRegCalendarAlt, FaRegHeart, FaMale, FaFemale, FaPaperclip } from "react-icons/fa";
 import { FaLocationDot, FaUsers } from "react-icons/fa6";
 import { MdEmojiPeople, MdAccessibility } from "react-icons/md";
 import { GiRunningShoe } from "react-icons/gi";
@@ -481,7 +481,7 @@ function App() {
             <h1>Domingão tem feijuca!</h1>
           </div>
           <div className='agenda-beans-content'>
-            <p>Feijoada beneficente à parte = 35 reais Tem opção vegetariana</p>
+            <p>Feijoada beneficente à parte = 35 reais<br></br><em>(tem opção vegetariana).</em></p>
           </div>
         </div>
 
@@ -500,8 +500,8 @@ function App() {
           <img src='/images/Mie-Kaikan.avif' />
         </div>
         <div className='local-content'>
-          <h1>Você vai viver isso tudo em um<br></br>
-            espaço estruturado:</h1>
+          <h1>Você vai viver isso tudo<br></br>
+            em um espaço estruturado:</h1>
           <h2>Mie kaikan - Vila mariana</h2>
           <p>Av. Lins de Vasconcelos, 3352 - Vila Mariana, São Paulo<br></br>(em frente ao metrô Vila Mariana)</p>
           <div className='local-content-icons'>
@@ -556,7 +556,9 @@ function App() {
 
             <div className='money-content-box-bill-price'>
               <div className='money-content-box-bill-price-content'>
+
                 <p className='lote-atual'>Atual</p>
+
                 <div>
                   <p>1º lote</p>
                   <p><span>R$287</span></p>
@@ -606,7 +608,7 @@ function App() {
               </div>
             </div>
 
-            <p>Os valores dos bailes antecipados é até o dia <strong>23 de julho, às 23:59hrs</strong></p>
+            <p>Os valores do pacote de bailes e os ingressos avulsos antecipados é até o dia <strong>23 de julho, às 23:59hrs</strong></p>
 
             {/*
             <p>Feijoada beneficente à parte = 35 reais <br></br> Tem opção vegetariana</p>
@@ -648,25 +650,26 @@ function App() {
       {/* EXTRAS */}
       <section section className='extra' id='extra'>
         <h1>Informações extras</h1>
+        <p className='extra-subtitle'>Clicle nos titulos dos tópicos para ver informações mais detalhadas.</p>
         <div className='extra-content'>
           <div className='extra-content-box'>
             <IoBedSharp />
             <div className='extra-content-box-text'>
-              <h2>Hospedagem</h2>
+              <h2>Hospedagem <FaPaperclip className='clip-svg'/></h2>
               <p>Temos indicações de hotéis e hostels próximos ao local.</p>
             </div>
           </div>
           <div className='extra-content-box'>
             <IoRestaurantSharp />
             <div className='extra-content-box-text'>
-              <h2>Restaurante próximos</h2>
+              <h2>Restaurantes<br></br>próximos<FaPaperclip className='clip-svg'/></h2>
               <p>Opções variadas a poucos minutos do Mie Kaikan.</p>
             </div>
           </div>
           <div className='extra-content-box'>
             <FaLocationDot />
             <div className='extra-content-box-text'>
-              <h2>Como chegar</h2>
+              <h2>Como chegar <FaPaperclip className='clip-svg'/></h2>
               <p>Fácil acesso de ônibus, carro e metrô (em frente a estação Vila Mariana).</p>
             </div>
           </div>
