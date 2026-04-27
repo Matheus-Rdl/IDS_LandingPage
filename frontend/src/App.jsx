@@ -391,6 +391,9 @@ function App() {
               <div>
                 <p>
                   &#128204;Gafieira da ladeira<br></br>
+                  <ul>
+                    <li>Rua Mourato Coelho 466, Pinheiros</li>
+                  </ul>
                   <em>20h às 1h</em>
                 </p>
 
@@ -410,7 +413,7 @@ function App() {
             </p>
             <div>
               <p>
-                &#9749;Cáfe da manhã incluso<br></br>
+                &#9749;Recepção com café da manhã incluso<br></br>
                 <em>9h</em>
               </p>
               <p>
@@ -421,13 +424,13 @@ function App() {
               <p><strong>Festa dos Irmãos</strong></p>
 
               <p>
-                &#127917;Recepção e Apresentações<br></br>
-                <em>17h30</em>
+                &#127917;Recepção e Show da Cia<br></br>
+                <em>17h</em>
               </p>
 
               <p>
                 &#128131;Baile principal<br></br>
-                <em>16h30</em>
+                <em>18h30</em>
               </p>
 
               <ul>
@@ -447,14 +450,14 @@ function App() {
 
             <div>
               <p>
-                &#127891;Aulas e vivênvias<br></br>
+                &#127891;Aulas e vivências<br></br>
                 <em>9h30 às 15h</em>
               </p>
 
               <p><strong>Domingueira dos Irmãos</strong></p>
 
               <p>
-                &#127835;Feijodada beneficente com roda de samba<br></br>
+                &#127835;Feijoada beneficente com roda de samba<br></br>
                 <em>15h às 17h</em>
               </p>
 
@@ -608,7 +611,7 @@ function App() {
               </div>
             </div>
 
-            <p>Os valores do pacote de bailes e os ingressos avulsos antecipados é até o dia <strong>23 de julho, às 23:59hrs</strong></p>
+            <p>Os valores do pacote de bailes e dos ingressos avulsos antecipados valem até o dia <strong>23 de julho, às 23:59hrs</strong></p>
 
             {/*
             <p>Feijoada beneficente à parte = 35 reais <br></br> Tem opção vegetariana</p>
@@ -655,21 +658,21 @@ function App() {
           <div className='extra-content-box'>
             <IoBedSharp />
             <div className='extra-content-box-text'>
-              <h2>Hospedagem <FaPaperclip className='clip-svg'/></h2>
+              <h2>Hospedagem <FaPaperclip className='clip-svg' /></h2>
               <p>Temos indicações de hotéis e hostels próximos ao local.</p>
             </div>
           </div>
           <div className='extra-content-box'>
             <IoRestaurantSharp />
             <div className='extra-content-box-text'>
-              <h2>Restaurantes<br></br>próximos<FaPaperclip className='clip-svg'/></h2>
+              <h2>Restaurantes<br></br>próximos<FaPaperclip className='clip-svg' /></h2>
               <p>Opções variadas a poucos minutos do Mie Kaikan.</p>
             </div>
           </div>
           <div className='extra-content-box'>
             <FaLocationDot />
             <div className='extra-content-box-text'>
-              <h2>Como chegar <FaPaperclip className='clip-svg'/></h2>
+              <h2>Como chegar <FaPaperclip className='clip-svg' /></h2>
               <p>Fácil acesso de ônibus, carro e metrô (em frente a estação Vila Mariana).</p>
             </div>
           </div>
@@ -687,7 +690,7 @@ function App() {
               >
                 (11) 98383-0732 - Thata<IoLogoWhatsapp className='svg-out' /></a></strong><br></br><strong>
                 <a
-                  href="https://wa.me/551162529013"
+                  href="https://wa.me/5511962529013"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
