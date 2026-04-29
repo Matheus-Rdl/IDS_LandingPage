@@ -353,13 +353,14 @@ ol {
 
 .header-bg {
   position: absolute;
-  width: 100%;
-  margin-left: 0;
+  width: 75%;
+  margin-inline: 12.5%;
   opacity: 0.5;
   top: 0;
   z-index: -10;
   opacity: .8;
 
+  /*
   -webkit-mask-image: linear-gradient(to bottom,
       black 0px,
       black 60%,
@@ -392,7 +393,7 @@ ol {
       rgba(0, 0, 0, 0.4) 80%,
       transparent 100%);
 }
-
+*/
 .header-bg-mobile {
   display: none;
   position: absolute;
