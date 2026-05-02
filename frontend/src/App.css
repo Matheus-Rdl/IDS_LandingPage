@@ -360,7 +360,7 @@ ol {
   z-index: -10;
   opacity: .8;
 
-  /*
+  
   -webkit-mask-image: linear-gradient(to bottom,
       black 0px,
       black 60%,
@@ -393,7 +393,7 @@ ol {
       rgba(0, 0, 0, 0.4) 80%,
       transparent 100%);
 }
-*/
+
 .header-bg-mobile {
   display: none;
   position: absolute;
