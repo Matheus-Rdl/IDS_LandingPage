@@ -167,7 +167,7 @@ function App() {
           </div>
 
           <div className='header-lotes'>
-            <img src='/images/lotes/1-lote.png' />
+            <img src='/images/lotes/1Lote.png' />
             <section className="countdown-wrapper">
               <div className="countdown-box">
                 <h2>O evento começa em:</h2>
@@ -565,7 +565,7 @@ function App() {
                   <p>1º lote</p>
                   <p><span>R$287</span></p>
                 </div>
-                <p className='day'>(Até 30/abr)</p>
+                <p className='day'>(Até 08/mai)</p>
               </div>
               <div className='money-content-box-bill-price-content'>
                 <div>
@@ -574,7 +574,7 @@ function App() {
                 </div>
                 {/*
                 */}
-                <p className='day day-off'>(01/mai até 30/jun)</p>
+                <p className='day day-off'>(09/mai até 30/jun)</p>
               </div>
               <div className='money-content-box-bill-price-content'>
                 <div>
