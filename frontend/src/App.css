@@ -1193,7 +1193,8 @@ ol {
   font-size: smaller;
   background-color: var(--color-blue);
   padding-inline: 2rem;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
+  border: 1.5px solid var(--color-red);
 }
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content .day {
