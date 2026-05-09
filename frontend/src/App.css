@@ -1165,7 +1165,7 @@ ol {
 }
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content {
-
+width: 30%;
   display: flex;
   flex-direction: column;
   font-weight: bold;
