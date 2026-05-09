@@ -559,7 +559,7 @@ function App() {
             <div className='money-content-box-bill-price'>
               <div className='money-content-box-bill-price-content'>
 
-                <p className='lote-atual'>Atual</p>
+                
 
                 <div>
                   <p>1º lote</p>
@@ -577,6 +577,9 @@ function App() {
                 <p className='day day-off'>(09/mai até 30/jun)</p>
               </div>
               <div className='money-content-box-bill-price-content'>
+
+<p className='lote-atual'>Atual</p>
+                
                 <div>
                   <p>3º lote</p>
                   <p><span>R$397</span></p>
