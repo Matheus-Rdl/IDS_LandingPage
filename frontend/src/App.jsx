@@ -568,6 +568,10 @@ function App() {
                 <p className='day'>(Até 08/mai)</p>
               </div>
               <div className='money-content-box-bill-price-content'>
+
+
+<p className='lote-atual'>Atual</p>
+                
                 <div>
                   <p>2º lote</p>
                   <p><span>R$357</span></p>
@@ -578,7 +582,6 @@ function App() {
               </div>
               <div className='money-content-box-bill-price-content'>
 
-<p className='lote-atual'>Atual</p>
                 
                 <div>
                   <p>3º lote</p>
