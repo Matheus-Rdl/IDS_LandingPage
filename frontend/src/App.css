@@ -353,8 +353,8 @@ ol {
 
 .header-bg {
   position: absolute;
-  width: 100%;
-  margin-inline: 0;
+  width: 90%;
+  margin-left: 10%;
   opacity: 0.5;
   top: 0;
   z-index: -10;
@@ -1176,7 +1176,6 @@ width: 30%;
   justify-content: center;
   position: relative;
   overflow: hidden;
-
 }
 
 .money .money-content .money-content-box-bill .money-content-box-bill-price .money-content-box-bill-price-content:nth-child(2) {
@@ -1461,6 +1460,13 @@ footer h1 {
 .footer-waves .footer-wave-2 {
   width: 20%;
   margin-bottom: -3rem;
+}
+
+@media (max-width: 1100px) {
+  .header-bg{
+    width: 100%;
+    margin-inline: 0;
+  }
 }
 
 

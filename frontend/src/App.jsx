@@ -558,19 +558,15 @@ function App() {
 
             <div className='money-content-box-bill-price'>
               <div className='money-content-box-bill-price-content'>
-
-
-
                 <div>
                   <p>1º lote</p>
                   <p><span>R$287</span></p>
                 </div>
                 <p className='day day-off'>(Até 08/mai)</p>
               </div>
+
               <div className='money-content-box-bill-price-content'>
-
                 <p className='lote-atual'>Atual</p>
-
                 <div>
                   <p>2º lote</p>
                   <p><span>R$357</span></p>
@@ -579,9 +575,8 @@ function App() {
                 */}
                 <p className='day'>(09/mai até 30/jun)</p>
               </div>
+
               <div className='money-content-box-bill-price-content'>
-
-
                 <div>
                   <p>3º lote</p>
                   <p><span>R$397</span></p>
@@ -657,26 +652,32 @@ function App() {
       {/* EXTRAS */}
       <section section className='extra' id='extra'>
         <h1>Informações extras</h1>
+        {/*
         <p className='extra-subtitle'>Clicle nos titulos dos tópicos para ver informações mais detalhadas.</p>
+        */}
         <div className='extra-content'>
           <div className='extra-content-box'>
             <IoBedSharp />
             <div className='extra-content-box-text'>
-              <h2>Hospedagem <FaPaperclip className='clip-svg' /></h2>
+              <h2>Hospedagem
+                {/*
+                <FaPaperclip className='clip-svg' />
+                */}
+              </h2>
               <p>Temos indicações de hotéis e hostels próximos ao local.</p>
             </div>
           </div>
           <div className='extra-content-box'>
             <IoRestaurantSharp />
             <div className='extra-content-box-text'>
-              <h2>Restaurantes<br></br>próximos<FaPaperclip className='clip-svg' /></h2>
+              <h2>Restaurantes<br></br>próximos</h2>
               <p>Opções variadas a poucos minutos do Mie Kaikan.</p>
             </div>
           </div>
           <div className='extra-content-box'>
             <FaLocationDot />
             <div className='extra-content-box-text'>
-              <h2>Como chegar <FaPaperclip className='clip-svg' /></h2>
+              <h2>Como chegar</h2>
               <p>Fácil acesso de ônibus, carro e metrô (em frente a estação Vila Mariana).</p>
             </div>
           </div>
